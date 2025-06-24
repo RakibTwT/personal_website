@@ -19,19 +19,21 @@ This is my personal web project designed to look like the homepage of Harvard Un
 
 ## Folder Structure
 
+```
 personal_website/
 ├── index.html
 ├── about/
-│ └── about.html
+│   └── about.html
 ├── portfolio/
-│ └── portfolio.html
+│   └── portfolio.html
 ├── calculator/
-│ ├── calculator.html
-│ ├── calc_style.css
-│ └── code.js
+│   ├── calculator.html
+│   ├── calc_style.css
+│   └── code.js
 ├── biodata.html
 ├── style.css
 └── style.js
+```
 
 ## Methodology
 
