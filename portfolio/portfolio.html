@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Portfolio - Rakib Talukder</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      background: #fefefe;
+      color: #222;
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+    }
+    header {
+      background: #a51c30;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffc72c;
+    }
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      background: white;
+      box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+      border-radius: 8px;
+    }
+    main h2 {
+      font-family: 'Georgia', serif;
+      font-weight: 700;
+      font-size: 2.2rem;
+      border-bottom: 3px solid #a51c30;
+      padding-bottom: 0.4rem;
+      margin-bottom: 2rem;
+    }
+    ul.project-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    ul.project-list li {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgb(0 0 0 / 0.05);
+      transition: box-shadow 0.3s ease;
+    }
+    ul.project-list li:hover {
+      box-shadow: 0 6px 15px rgb(0 0 0 / 0.15);
+    }
+    ul.project-list a {
+      text-decoration: none;
+      color: #a51c30;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #222;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Rakib Talukder</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html">About Me</a></li>
+        <li><a href="portfolio.html">My Portfolio</a></li>
+        <li><a href="https://github.com/RakibTwT" target="_blank">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>My Portfolio</h2>
+    <ul class="project-list">
+      <li><a href="../biodata/biodata.html" target="_blank">Matrimonial Biodata</a></li>
+      <li><a href="../calculator/calculator.html" target="_blank">Calculator</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rakib Talukder</p>
+  </footer>
+</body>
+</html>
