@@ -25,25 +25,26 @@ This is my personal web project designed to look like the homepage of Harvard Un
 personal_website/
 ├── index.html
 ├── about/
-│ └── about.html
+│   └── about.html
 ├── biodata/
-│ ├── biodata.html
-│ └── style.css
+│   ├── biodata.html
+│   └── style.css
 ├── calculator/
-│ ├── calculator.html
-│ ├── code.js
-│ └── assets/
-│ └── calc_style.css
+│   ├── calculator.html
+│   ├── code.js
+│   └── assets/
+│       └── calc_style.css
 ├── daraz/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 ├── portfolio/
-│ ├── index.html
-│ ├── portfolio.html
-│ └── main.js
+│   ├── index.html
+│   ├── portfolio.html
+│   └── main.js
 ├── style.css
 └── README.md
+
 
 ## 🛠 Methodology
 
