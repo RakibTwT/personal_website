@@ -8,12 +8,15 @@ This is my personal web project designed to look like the homepage of Harvard Un
 - Matrimonial Biodata
 - Portfolio
 - Calculator
+- Daraz Homepage (with Seller Form Validation)
 
 ## 🌟 Features
 
 - Harvard-style homepage layout
 - Responsive design
 - JavaScript-powered calculator
+- Daraz-inspired shopping homepage
+- Seller registration form with real-time validation and tick/cross icons
 - Clean and organized file structure
 - Custom styling with Google Fonts
 
@@ -31,9 +34,14 @@ personal_website/
 │ ├── code.js
 │ └── assets/
 │ └── calc_style.css
+├── daraz/
+│ ├── index.html
+│ ├── style.css
+│ └── script.js
 ├── portfolio/
-│ └── portfolio.html
-├── main.js
+│ ├── index.html
+│ ├── portfolio.html
+│ └── main.js
 ├── style.css
 └── README.md
 
@@ -41,10 +49,11 @@ personal_website/
 
 1. Studied the layout and design of Harvard University's homepage.
 2. Designed a responsive homepage with a navigation bar and linked sections.
-3. Created dedicated pages for About, Biodata, Portfolio, and Calculator.
-4. Implemented a functional calculator using JavaScript.
-5. Applied modern CSS with clean formatting and layout techniques.
-6. Ensured compatibility across modern browsers and devices.
+3. Created dedicated pages for About Me, Biodata, Portfolio, and Calculator.
+4. Added a Daraz-like homepage with product section and a “Become a Seller” form.
+5. Implemented real-time input validation with green/red tick indicators using JavaScript.
+6. Applied modern CSS styling with organized structure.
+7. Ensured full browser/device compatibility and smooth UX.
 
 ## 🔗 GitHub Repository
 
