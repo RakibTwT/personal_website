@@ -21,6 +21,7 @@ This is my personal web project designed to look like the homepage of Harvard Un
 - Custom styling with Google Fonts
 
 ## 📂 Folder Structure
+```plaintext
 personal_website/
 │
 ├── index.html
@@ -44,6 +45,7 @@ personal_website/
 │   └── main.js
 ├── style.css
 └── README.md
+```
 
 ## 🛠 Methodology
 
