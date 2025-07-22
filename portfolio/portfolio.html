@@ -10,6 +10,8 @@
       color: #222;
       font-family: 'Georgia', serif;
       line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
     header {
       background: #a51c30;
@@ -18,11 +20,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
     }
     nav ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       gap: 1.2rem;
+      padding: 0;
+      margin: 0;
     }
     nav a {
       color: white;
@@ -37,9 +47,9 @@
     main {
       max-width: 900px;
       margin: 3rem auto;
-      padding: 0 2rem;
+      padding: 0 2rem 2rem;
       background: white;
-      box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
     main h2 {
@@ -62,11 +72,11 @@
       border: 1px solid #ddd;
       padding: 1.5rem;
       border-radius: 6px;
-      box-shadow: 0 1px 4px rgb(0 0 0 / 0.05);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
       transition: box-shadow 0.3s ease;
     }
     ul.project-list li:hover {
-      box-shadow: 0 6px 15px rgb(0 0 0 / 0.15);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     }
     ul.project-list a {
       text-decoration: none;
@@ -81,6 +91,13 @@
       color: white;
       font-size: 0.9rem;
       margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -100,13 +117,14 @@
   <main>
     <h2>My Portfolio</h2>
     <ul class="project-list">
-      <li><a href="../biodata/biodata.html" target="_blank">Matrimonial Biodata</a></li>
-      <li><a href="../calculator/calculator.html" target="_blank">Calculator</a></li>
+      <li><a href="../biodata/biodata.html" target="_blank">📄 Matrimonial Biodata</a></li>
+      <li><a href="../calculator/calculator.html" target="_blank">🧮 Calculator</a></li>
+      <li><a href="../daraz/index.html" target="_blank">🛍️ Daraz Homepage (with Seller Feature)</a></li>
     </ul>
   </main>
 
   <footer>
-    <p>&copy; 2025 Rakib Talukder</p>
+    <p>&copy; 2025 Rakib Talukder | All rights reserved</p>
   </footer>
 </body>
 </html>

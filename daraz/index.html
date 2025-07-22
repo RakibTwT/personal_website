@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daraz Bangladesh - Online Shopping</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Daraz</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" onclick="toggleSellerForm()">Become a Seller</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to Daraz Bangladesh</h1>
+      <p>Your one-stop online shopping destination</p>
+    </section>
+
+    <section class="product-grid">
+      <div class="product">📱 Electronics</div>
+      <div class="product">👜 Fashion</div>
+      <div class="product">🏠 Home & Living</div>
+      <div class="product">🧴 Health & Beauty</div>
+    </section>
+
+    <section class="seller-form hidden" id="sellerForm">
+      <h2>Become a Seller</h2>
+      <form id="form" onsubmit="return validateForm()">
+        <div class="input-wrapper">
+          <input type="text" id="name" placeholder="Your Name" oninput="validateInput(this, 'name')" />
+          <span class="icon" id="icon-name"></span>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="email" id="email" placeholder="Your Email" oninput="validateInput(this, 'email')" />
+          <span class="icon" id="icon-email"></span>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="text" id="business" placeholder="Business Name" oninput="validateInput(this, 'business')" />
+          <span class="icon" id="icon-business"></span>
+        </div>
+
+        <button type="submit">Submit</button>
+        <p class="error" id="errorMsg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Daraz Bangladesh</p>
+  </footer>
+</body>
+</html>
