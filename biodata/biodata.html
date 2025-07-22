@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rakib Talukder - Biodata Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Matrimonial Biodata Form</h1>
+    <form id="biodataForm" novalidate>
+      
+      <label>Full Name *</label>
+      <input type="text" id="fullname" required>
+
+      <label>Date of Birth *</label>
+      <input type="date" id="dob" required>
+
+      <label>Gender *</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label>Height (in feet) *</label>
+      <input type="text" id="height" required>
+
+      <label>Weight (in kg) *</label>
+      <input type="number" id="weight" required>
+
+      <label>Marital Status *</label>
+      <select id="marital" required>
+        <option value="">Select</option>
+        <option>Unmarried</option>
+        <option>Married</option>
+        <option>Divorced</option>
+      </select>
+
+      <label>Religion *</label>
+      <input type="text" id="religion" required>
+
+      <label>Education Qualification *</label>
+      <select id="education" required>
+        <option value="">Select Qualification</option>
+        <option>S.S.C</option>
+        <option>H.S.C</option>
+        <option>Diploma</option>
+        <option>B.Sc</option>
+        <option>B.A</option>
+        <option>B.B.A</option>
+        <option>M.Sc</option>
+        <option>M.A</option>
+        <option>M.B.A</option>
+        <option>Ph.D</option>
+      </select>
+
+      <label>Occupation *</label>
+      <input type="text" id="occupation" required>
+
+      <label>Phone Number *</label>
+      <div class="input-wrapper">
+        <input type="tel" id="phone" pattern="[0-9]{11}" required>
+        <span id="phone-tick" class="tick">&#10003;</span>
+      </div>
+
+      <label>Email *</label>
+      <div class="input-wrapper">
+        <input type="email" id="email" required>
+        <span id="email-tick" class="tick">&#10003;</span>
+      </div>
+
+      <label>Password *</label>
+      <div class="input-wrapper">
+        <input type="password" id="password" required>
+        <span id="pass-tick" class="tick">&#10003;</span>
+      </div>
+
+      <label>Address *</label>
+      <textarea id="address" rows="3" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('biodataForm');
+    const password = document.getElementById('password');
+    const passTick = document.getElementById('pass-tick');
+
+    const email = document.getElementById('email');
+    const emailTick = document.getElementById('email-tick');
+
+    const phone = document.getElementById('phone');
+    const phoneTick = document.getElementById('phone-tick');
+
+    password.addEventListener('input', () => {
+      passTick.classList.toggle('show', password.value.length >= 8);
+    });
+
+    email.addEventListener('input', () => {
+      const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+      emailTick.classList.toggle('show', valid);
+    });
+
+    phone.addEventListener('input', () => {
+      const valid = /^[0-9]{11}$/.test(phone.value);
+      phoneTick.classList.toggle('show', valid);
+    });
+
+    form.addEventListener('submit', (e) => {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        alert("Please fill out all required fields correctly.");
+      }
+    });
+  </script>
+</body>
+</html>
